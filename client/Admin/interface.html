@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link href="../CSS/Rental.css" rel="stylesheet">
+    <script language="javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script language="javascript" src="../JS/Admin.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></head>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="../Admin/ckeditor/ckeditor.js"></script>
+<body>
+
+
+<div id="TopMenu">
+    <div id="UserName">Brandecation</div>
+    <div class="TopMenuItem" onclick="Admin.LoadPage('Clients')"><span class="fa fa-bolt"></span> Clients  </div>
+<!--    <div class="TopMenuItem" onclick="Admin.LoadPage('Modules')"> <span class="fa fa-file-o"></span> Pages  </div>-->
+    <div class="TopMenuItem" onclick="Admin.LoadPage('Modules')"> <span class="fa fa-delicious"></span> Modules  </div>
+    <div class="TopMenuItem" onclick="Admin.LoadPage('Tests')"> <span class="fa fa-bullseye"></span> Tests  </div>
+    <div class="TopMenuItem" onclick="Admin.LoadPage('Questions')"> <span class="fa fa-question-circle"></span> Questions  </div>
+    <div class="TopMenuItem" onclick="Admin.LoadPage('Rewards')"> <span class="fa fa-star-half-full"></span> Rewards  </div>
+    <div class="TopMenuItem" onclick="Admin.LoadPage('Users')"> <span class="fa fa-users"></span> Users  </div>
+    <div class="TopMenuItem" onclick="Admin.LoadPage('Analytics')"> <span class="fa fa-bar-chart"></span> Analytics  </div>
+
+    <div class="TopMenuItem" onclick="Admin.LoadPage('Messages')"> <span class="fa fa-envelope"></span> Messages  </div>
+    <div class="TopMenuItem" onclick="Admin.LoadPage('Logout')"> <span class="fa fa-remove"></span> Logout  </div>
+
+</div>
+
+<div id="MainContainer">
+
+
+
+</div>
+
+<div id="Payout">
+    <div id="ClosePayout" onclick="$(this).parent().hide()">X</div>
+    Pay the following amount:
+
+    <input type="text" id="PayoutAmount">
+<BR><BR>
+    <input type="button" value="Pay Amount" id="Pay" onclick="Admin.PayAmount();">
+
+
+
+    <script language="javascript">
+        $( document ).ready(function() {
+           Admin.Init();
+        });
+
+    </script></div>
+
+</body>
+
+
+</html>

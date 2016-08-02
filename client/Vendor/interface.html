@@ -1,0 +1,71 @@
+<html>
+<head>
+    <link href="../CSS/Vendors.css" rel="stylesheet">
+    <script language="javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script language="javascript" src="../JS/Vendors.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></head>
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+<body>
+
+
+<div id="TopMenu">
+    <div id="UserName">Welcome Back, Admin!</div>
+
+    <div class="TopMenuItem" onclick="Vendors.LoadPage('Account')">  Account  </div>
+    <div class="TopMenuItem" onclick="Vendors.LoadPage('Orders')">  Orders  </div>
+    <div class="TopMenuItem" onclick="Vendors.LoadPage('Inventory')">  Inventory  </div>
+    <div class="TopMenuItem" onclick="Vendors.LoadPage('Messages')">  Messages  </div>
+    <div class="TopMenuItem" onclick="Vendors.LoadPage('Logout')">  Logout  </div>
+
+</div>
+
+<div id="MainContainer">
+
+
+    Welcome!
+
+</div>
+
+<div id="BankAccount">
+
+    <form method="POST" id="inst-form" onsubmit="return false;">
+
+        <div class="form-row">
+            <label>
+                <span>Bank Location</span>
+                <select data-stripe="country" class="country">
+                    <option value="US">United States</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="form-row">
+            <label>
+                <span>Routing Number</span>
+                <input type="text" size="9" id="routingnumber" data-stripe="routingNumber" class="routingNumber"/>
+            </label>
+        </div>
+
+        <div class="form-row">
+            <label>
+                <span>Account Number</span>
+                <input type="text" size="17" id="accountnumber" data-stripe="accountNumber" class="accountNumber"/>
+            </label>
+        </div>
+
+        <input type="button" value="Save" onclick="Vendors.SaveBankAccount();">
+    </form>
+</div>
+
+
+
+<script language="javascript">
+    $( document ).ready(function() {
+       Vendors.Init();
+    });
+
+</script>
+</body>
+
+</html>

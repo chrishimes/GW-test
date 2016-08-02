@@ -1,0 +1,230 @@
+#TopMenu{
+
+    left:50%;
+    margin-left:-400px;
+    width:800px;
+top:5px;
+    position:absolute;
+text-align:center;
+}
+
+.AddRow{margin:3px;}
+
+.AddLabel{width:250px;text-align:right;
+
+    margin-right: 5px;}
+
+.AddLabel,.AddInput{
+    display:inline-block;
+}
+
+.TopMenuItem{
+
+    color:black;
+    padding:3px;
+    height:20px;
+    display:inline-block;
+    cursor:pointer;
+    text-align:center;
+
+
+    /* text-decoration: underline; */
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#map-canvas{
+    width:200px;
+    height:200px;
+
+}
+
+
+#PhotoPlaceHolder{
+
+    width:150px;
+    height:150px;
+    background-size:cover;
+    background-position: center;
+border: 1px dashed gray;
+margin:5px;
+    display:inline-block;
+}
+
+#Input_File{
+    display:none;
+}
+
+body{
+    font-family:arial;
+}
+#MainContainer{
+    left:50%;
+    margin-left:-400px;
+    width:800px;
+    top:50px;
+    position:absolute;
+
+}
+.FieldBit{display:inline-block; width:100px; overflow:hidden;
+    margin-left: 5px;
+    margin-right: 5px;}
+.ClickBit{cursor:pointer;color:#336699}
+.FieldBit300{
+    display:inline-block; width:300px; overflow:hidden;
+}
+.FieldBit400{
+    display:inline-block; width:400px; overflow:hidden;margin-left:10px;
+}
+.FieldBit100{
+    display:inline-block; width:100px; overflow:hidden;
+}
+.FieldBit200{
+    display:inline-block; width:200px; overflow:hidden;
+}
+
+.xButton{margin-top:15px;
+    color:white;
+    padding:3px;
+    border-radius:5px;
+    background-color:black;
+    height:20px;
+    display:inline-block;
+    cursor:pointer;
+    text-align:center;
+}
+
+
+
+#Payout{
+
+    position:fixed;
+    left:50%;
+    top:200px;
+    border:1px solid black;
+    background-color:white;
+    width:400px;
+    display:none;
+    margin-left:-200px;
+    padding: 25px;
+
+}
+#MyTests{
+    width:100%;
+    border:2px solid gray;
+    height:400px;
+}
+
+#UserName{
+
+    float: left;
+    font-size: 12px;
+    margin: 3px;
+    font-style: italic;
+    text-decoration:underline;
+    font-weight:bold;
+
+}
+
+#TopMenu{
+
+    border-bottom: 1px solid black;
+}
+
+#ClosePayout{
+    position:absolute;
+    left: 420px;
+    top:10px;
+}
+
+.CostBox{
+    width:30px;
+}
+
+#Desc,#LongDesc,#xContent{
+    width:500px;
+    height:100px;
+}
+
+
+
+.CartTitle{    float:left;
+width:250px;
+}
+.CartAmount{   float:left;
+    width:60px;
+    margin-left: 10px;
+}
+.CartRemove{
+    float:left;
+    width:16px;
+    cursor:pointer;
+    margin-left: 30px;
+
+}
+.CartFrom{
+
+    float: left;
+    width: 100px;
+    margin-left: 10px;
+}
+
+#ContainBox{
+    padding:20px;
+    text-align:left;
+
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    left: 50%;
+    margin-left: -425px;
+    width: 850px;
+}
+
+
+
+.CartItem{
+    margin: 5px;
+    overflow: auto;
+}
+.CartItemTotal{
+    margin: 5px;
+    overflow: auto;
+    border-top:1px solid gray;
+    padding-top:3px;
+}
+
+#CartContainer{
+font-size:12px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.redtext{
+    color:red
+}
+
+
+.Test_Item:nth-of-type(1) .Test_Up
+{
+pointer-events:none;
+    color:lightgray;
+}
+
+.Test_Item:last-child .Test_Down{
+
+    pointer-events:none;
+color:lightgray;
+
+}
+
+
+.Test_Item{width:500px;height:30px;}
+
+
+
+.Test_Title{width:200px;float:left;}
+.Test_QCount{width:20px;float:right;}
+.Test_Up{width:20px;float:right;cursor:pointer;}
+.Test_Down{width:20px;float:right;cursor:pointer;}
+.Test_Remove{width:20px;float:right;cursor:pointer;}

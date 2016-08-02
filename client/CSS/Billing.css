@@ -1,0 +1,24 @@
+.AddRow{
+    margin:3px;
+}
+
+.AddLabel{
+
+    display:inline-block;
+    text-align:right;
+    width:200px;
+    margin:2px;
+    font-weight:bold;
+}
+.AddInput{
+    display:inline-block;
+    margin:2px;
+
+}
+
+
+.CartTitle,.CartAmount{
+    display:inline-block;
+    margin:2px;
+
+}
